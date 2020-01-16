@@ -18,12 +18,12 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #d9d9d9;
+  color: white;
 
 }
 
 a:hover {
-  color: #2E5EAA;
+  color: #d9d9d9;
 }
 
 nav {
@@ -38,9 +38,16 @@ nav {
 }
 
 #banner {
-  background-image: url("https://unsplash.it/1000/600");
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("images/medico.jpg");
   background-size: cover;
-  padding: 150px 0;
+  margin: 0;
+  padding: 195 0 195 0;
   text-align: center;
 }
 
@@ -55,14 +62,33 @@ nav {
   opacity: 0.7;
 }
 
+@media screen and (max-width:480px) {
+  #banner {
+    background-image: none;
+  }
+
+  #banner h1 {
+    color: grey;
+  }
+
+  #banner p {
+    color grey
+  }
+}
+
 .card {
   padding: 50px;
   text-align: center;
 }
 
+.card h2 {
+  font-weight: bold;
+}
+
 .icon {
-  height: auto;
-  width: 100%;
+  width: fit-content;
+  align-self: center;
+  padding: 20px;
 }
 
 #footer {
@@ -70,4 +96,14 @@ nav {
   padding: 10px;
   font-size: 15px;
   text-align: center;
+  margin: 0;
+}
+
+#footer a {
+  font-size: 20px;
+  color: #2e2e2e;
+}
+
+#footer a:hover {
+  color: white;
 }
