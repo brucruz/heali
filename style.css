@@ -3,6 +3,7 @@ body {
   background-color: rgb(240, 240, 240);
   color: #2e2e2e;
   font-family: 'Roboto', sans-serif;
+  margin: 0px;
 }
 
 h1 {
@@ -17,7 +18,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #f85a3e;
+  color: #d9d9d9;
 
 }
 
@@ -36,7 +37,37 @@ nav {
   width: auto;
 }
 
+#banner {
+  background-image: url("https://unsplash.it/1000/600");
+  background-size: cover;
+  padding: 150px 0;
+  text-align: center;
+}
+
+#banner h1 {
+  color: white;
+}
+
+#banner p {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  opacity: 0.7;
+}
+
+.card {
+  padding: 50px;
+  text-align: center;
+}
+
 .icon {
-  height: 110px;
-  width: auto;
+  height: auto;
+  width: 100%;
+}
+
+#footer {
+  background-color: rgb(230, 230, 230);
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
 }
