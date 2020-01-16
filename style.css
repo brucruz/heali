@@ -1,0 +1,42 @@
+/* Fonts and color*/
+body {
+  background-color: rgb(240, 240, 240);
+  color: #2e2e2e;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Open+Sans:600', sans-serif;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: 'Open+Sans:600', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #f85a3e;
+
+}
+
+a:hover {
+  color: #2E5EAA;
+}
+
+nav {
+  background-color: rgb(230, 230, 230);
+}
+
+/*Custom designs (Class and IDs)*/
+
+#logo_nav {
+  height: 60px;
+  width: auto;
+}
+
+.icon {
+  height: 110px;
+  width: auto;
+}
