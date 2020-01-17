@@ -10,6 +10,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+     <!-- JS to change navbar when scrolling -->
+    <script type="text/javascript" src="scroll.js"></script>
+
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/5a0db7db75.js" crossorigin="anonymous"></script>
 
@@ -21,16 +24,16 @@
 
   <body>
     <!-- page's content -->
-    <nav class="navbar navbar-light sticky-top">
-      <span class="navbar-brand"><img src="images/logo_verde_com_icone.png" height="60" alt="heali"></span>
+    <nav class="navbar navbar-light fixed-top">
+      <span class="navbar-brand"><img src="images/logo_verde_com_icone.png" height="80" alt="heali"></span>
     </nav>
 
     <div id="banner">
       <div class="col-bg-6 col-md-6 col-sm-12">
-        <h1>Pesquise e compare seus exames médicos</h1>
+        <h1>Compare agora preços de exames médicos</h1>
         <p>Nós fazemos o trabalho de pesquisa por você</p>
         <button class="btn btn-lg" style="background-color: #F85A3E">
-          <a href="">Pesquise aqui</a>
+          <a href="">Pedir cotação</a>
         </button>
       </div>
     </div>
@@ -38,7 +41,7 @@
     <div class="row">
 
       <div class="col-xs-12 col-sm-6 col-md-4 col-bg-4">
-        <div class="card">
+        <div class="card rounded-lg">
           <img class= "icon" src="images/location.png" alt="">
           <h2>Pesquisa por localização</h2>
           <p>Nós encontramos a melhor opção próxima ao endereço que você escolher</p>
@@ -46,7 +49,7 @@
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-4 col-bg-4">
-        <div class="card">
+        <div class="card rounded-lg">
           <img class= "icon" src="images/exames.png" alt="">
           <h2>Todos os exames</h2>
           <p>Localizamos para você <strong>qualquer</strong> tipo de exame médico laboratorial</p>
@@ -54,7 +57,7 @@
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-4 col-bg-4">
-        <div class="card">
+        <div class="card rounded-lg">
           <img class= "icon" src="images/laboratorio.png" alt="">
           <h2>Maiores laboratórios</h2>
           <p>Possuímos em nossa base os maiores e melhores laboratórios</p>
@@ -77,6 +80,17 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- JS to change navbar when scrolling -->
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar-fixed-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+    <script type="text/javascript" src="scroll.js"></script>
 
   </body>
 </html>
